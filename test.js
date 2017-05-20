@@ -36,3 +36,5 @@ const students = process.argv.slice(2);
 students.forEach((student) => {
 	print(student);
 });
+
+module.export.print = print;
