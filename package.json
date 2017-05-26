@@ -4,7 +4,9 @@
   "description": "matcha project 42",
   "main": "index.js",
   "scripts": {
-	"start": "babel-node app.js --presets=latest"
+    "start": "nodemon app.js --exec babel-node --presets=latest",
+	"debug": "nodemon --debug-brk app.js --exec babel-node --presets=latest",
+	"deploy": "npm install && npm start"
   },
   "repository": {
     "type": "git",
@@ -26,9 +28,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.5.1",
-    "webpack": "^2.6.0"
+    "babel-preset-latest": "^6.24.1",
+    "nodemon": "^1.11.0"
   }
 }
