@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js --exec babel-node --presets=latest",
-	"debug": "nodemon --debug-brk app.js --exec babel-node --presets=latest",
-	"deploy": "npm install && npm start"
+    "debug": "nodemon --debug-brk app.js --exec babel-node --presets=latest",
+    "deploy": "npm install && npm start"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/efichot/Matcha#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "pug": "^2.0.0-rc.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
