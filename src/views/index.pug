@@ -1,7 +1,10 @@
 doctype html
 html(lang="en")
-	head
-		title Landing Page
+	include ./partials/_head.pug
+	
 	body
 		h1 COUCOU from .pug template tu t'appelles #{etienne.name} !
 		p Et tu as #{etienne.age} ans
+		
+		//- extends ./name of the extends.pug
+		//- include keyword for adding a partials

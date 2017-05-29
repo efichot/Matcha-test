@@ -4,8 +4,8 @@
   "description": "matcha project 42",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js --exec babel-node --presets=latest",
-    "debug": "nodemon --debug-brk app.js --exec babel-node --presets=latest",
+    "start": "nodemon ./src/app.js --exec babel-node --presets=latest",
+    "debug": "nodemon --debug-brk ./src/app.js --exec babel-node --presets=latest",
     "deploy": "npm install && npm start"
   },
   "repository": {
